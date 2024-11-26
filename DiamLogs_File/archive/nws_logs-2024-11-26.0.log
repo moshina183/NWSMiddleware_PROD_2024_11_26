@@ -1,0 +1,84 @@
+2024-11-26 14:38:24,658 INFO [RMI TCP Connection(12797)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [SpringApplicationAdminMXBeanRegistrar.java:159] 
+Application shutdown requested.
+2024-11-26 14:38:24,664 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.b.a.ApplicationAvailabilityBean [ApplicationAvailabilityBean.java:77] 
+Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-11-26 14:38:24,664 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:1049] 
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Nov 18 12:30:56 GST 2024
+2024-11-26 14:38:24,667 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase 2147483647
+2024-11-26 14:38:24,669 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-11-26 14:38:24,671 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase 2147483646
+2024-11-26 14:38:24,767 INFO [RMI TCP Connection(12797)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Pausing ProtocolHandler ["http-nio-9990"]
+2024-11-26 14:38:24,774 INFO [RMI TCP Connection(12797)-127.0.0.1] o.a.c.c.StandardService [DirectJDKLog.java:173] 
+Stopping service [Tomcat]
+2024-11-26 14:38:24,784 INFO [RMI TCP Connection(12797)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] 
+Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-26 14:38:24,792 WARN [RMI TCP Connection(12797)-127.0.0.1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] 
+The web application [ROOT] appears to have started a thread named [logback-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.10/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+2024-11-26 14:38:24,793 WARN [RMI TCP Connection(12797)-127.0.0.1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] 
+The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/java.lang.Object.wait(Native Method)
+ java.base@11.0.10/java.lang.Object.wait(Object.java:328)
+ java.base@11.0.10/java.util.TimerThread.mainLoop(Timer.java:527)
+ java.base@11.0.10/java.util.TimerThread.run(Timer.java:506)
+2024-11-26 14:38:24,802 WARN [RMI TCP Connection(12797)-127.0.0.1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] 
+The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/java.lang.Object.wait(Native Method)
+ app//oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:331)
+2024-11-26 14:38:24,806 WARN [RMI TCP Connection(12797)-127.0.0.1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] 
+The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.10/java.lang.Object.wait(Native Method)
+ java.base@11.0.10/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@11.0.10/java.util.TimerThread.run(Timer.java:506)
+2024-11-26 14:38:24,824 INFO [RMI TCP Connection(12797)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Stopping ProtocolHandler ["http-nio-9990"]
+2024-11-26 14:38:24,848 INFO [RMI TCP Connection(12797)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Destroying ProtocolHandler ["http-nio-9990"]
+2024-11-26 14:38:24,853 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'webServerStartStop' completed its stop procedure
+2024-11-26 14:38:24,856 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase -2147483647
+2024-11-26 14:38:24,857 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'springBootLoggingLifecycle' completed its stop procedure
+2024-11-26 14:38:24,858 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:452] 
+Unregistering JMX-exposed beans on shutdown
+2024-11-26 14:38:24,860 DEBUG [RMI TCP Connection(12797)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] 
+Shutting down ExecutorService 'applicationTaskExecutor'
+2024-11-26 14:39:05,669 DEBUG [main] o.s.t.c.BootstrapUtils [BootstrapUtils.java:108] 
+Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2024-11-26 14:39:05,691 DEBUG [main] o.s.t.c.BootstrapUtils [BootstrapUtils.java:88] 
+Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2024-11-26 14:39:05,752 DEBUG [main] o.s.t.c.BootstrapUtils [BootstrapUtils.java:143] 
+Instantiating TestContextBootstrapper for test class [com.nws.api.NwsMiddlewareApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+2024-11-26 14:39:05,780 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:305] 
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nws.api.NwsMiddlewareApplicationTests], using SpringBootContextLoader
+2024-11-26 14:39:05,789 DEBUG [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:258] 
+Did not detect default resource location for test class [com.nws.api.NwsMiddlewareApplicationTests]: class path resource [com/nws/api/NwsMiddlewareApplicationTests-context.xml] does not exist
+2024-11-26 14:39:05,790 DEBUG [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:258] 
+Did not detect default resource location for test class [com.nws.api.NwsMiddlewareApplicationTests]: class path resource [com/nws/api/NwsMiddlewareApplicationTestsContext.groovy] does not exist
+2024-11-26 14:39:05,791 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:264] 
+Could not detect default resource locations for test class [com.nws.api.NwsMiddlewareApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-11-26 14:39:05,792 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:83] 
+Could not detect default configuration classes for test class [com.nws.api.NwsMiddlewareApplicationTests]: NwsMiddlewareApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-26 14:39:05,957 DEBUG [main] o.s.t.c.s.ActiveProfilesUtils [ActiveProfilesUtils.java:80] 
+Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.nws.api.NwsMiddlewareApplicationTests]
+2024-11-26 14:39:06,134 DEBUG [main] o.s.c.a.ClassPathScanningCandidateComponentProvider [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\NwsMiddlewareApplication.class]
+2024-11-26 14:39:06,136 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:239] 
+Found @SpringBootConfiguration com.nws.api.NwsMiddlewareApplication for test class com.nws.api.NwsMiddlewareApplicationTests
+2024-11-26 14:39:06,359 DEBUG [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:124] 
+@TestExecutionListeners is not present for class [com.nws.api.NwsMiddlewareApplicationTests]: using defaults.
+2024-11-26 14:39:06,361 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:245] 
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]

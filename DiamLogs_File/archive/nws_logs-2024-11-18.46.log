@@ -1,0 +1,118 @@
+2024-11-18 11:22:41,279 INFO [http-nio-9990-exec-2] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] 
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 11:22:41,289 INFO [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] 
+Initializing Servlet 'dispatcherServlet'
+2024-11-18 11:22:41,289 DEBUG [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [DispatcherServlet.java:521] 
+Detected StandardServletMultipartResolver
+2024-11-18 11:22:41,289 DEBUG [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [DispatcherServlet.java:545] 
+Detected AcceptHeaderLocaleResolver
+2024-11-18 11:22:41,289 DEBUG [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [DispatcherServlet.java:570] 
+Detected FixedThemeResolver
+2024-11-18 11:22:41,297 DEBUG [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [DispatcherServlet.java:720] 
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2bd5cdc0
+2024-11-18 11:22:41,297 DEBUG [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [DispatcherServlet.java:784] 
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@3cde17c
+2024-11-18 11:22:41,298 DEBUG [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:542] 
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-18 11:22:41,298 INFO [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] 
+Completed initialization in 9 ms
+2024-11-18 11:22:41,316 DEBUG [http-nio-9990-exec-2] o.s.w.s.DispatcherServlet [LogFormatUtils.java:119] 
+POST "/api/v2/gettrafficinformaton", parameters={}
+2024-11-18 11:22:41,337 DEBUG [http-nio-9990-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractHandlerMapping.java:522] 
+Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-18 11:22:41,340 INFO [http-nio-9990-exec-2] c.n.a.i.BaseInterceptor [BaseInterceptor.java:52] 
+Inside prehandle
+2024-11-18 11:22:41,458 INFO [http-nio-9990-exec-2] c.n.a.i.BaseInterceptor [BaseInterceptor.java:557] 
+############Request Processing started for request-id ab and esbURL is /api/v2/gettrafficinformaton
+2024-11-18 11:22:41,470 INFO [http-nio-9990-exec-2] c.n.a.f.GetDetails [GetDetails.java:20] 
+Inside getEncryption status.. for service code gettrafficinformaton
+2024-11-18 11:22:42,312 DEBUG [http-nio-9990-exec-2] c.n.a.f.GetDetails [GetDetails.java:33] 
+Encryption status is N
+2024-11-18 11:22:42,315 INFO [http-nio-9990-exec-2] c.n.a.i.BaseInterceptor [BaseInterceptor.java:594] 
+Inside DDOS filtering
+2024-11-18 11:22:42,315 INFO [http-nio-9990-exec-2] c.n.a.f.GetDetails [GetDetails.java:170] 
+Inside get error codes.
+2024-11-18 11:22:42,401 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:30] 
+inside request param validation
+2024-11-18 11:22:42,401 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:76] 
+In Timestamp validation
+2024-11-18 11:22:42,402 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:82] 
+The timestamp difference is--
+2024-11-18 11:22:42,403 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:122] 
+Validating auth key for consumerCode ESP with auth key 36997d562e054a318475c4025b913338
+2024-11-18 11:22:42,403 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:139] 
+Inside getAuthKeyFromDB..
+2024-11-18 11:22:42,492 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:124] 
+Auth Key from DB for Consumer code ESP is  36997d562e054a318475c4025b913338
+2024-11-18 11:22:42,493 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:139] 
+Inside getAuthKeyFromDB..
+2024-11-18 11:22:42,579 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:175] 
+Whitelist Process Starts here....
+2024-11-18 11:22:42,579 INFO [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:187] 
+Inside is whiteListed
+2024-11-18 11:27:26,287 DEBUG [http-nio-9990-exec-2] c.n.a.f.AuthenticationFilter [AuthenticationFilter.java:236] 
+Consumer allowed for gettrafficinformaton
+2024-11-18 11:30:26,032 DEBUG [main] o.s.t.c.BootstrapUtils [BootstrapUtils.java:108] 
+Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2024-11-18 11:30:26,048 DEBUG [main] o.s.t.c.BootstrapUtils [BootstrapUtils.java:88] 
+Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2024-11-18 11:30:26,111 DEBUG [main] o.s.t.c.BootstrapUtils [BootstrapUtils.java:143] 
+Instantiating TestContextBootstrapper for test class [com.nws.api.NwsMiddlewareApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+2024-11-18 11:30:26,129 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:305] 
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nws.api.NwsMiddlewareApplicationTests], using SpringBootContextLoader
+2024-11-18 11:30:26,140 DEBUG [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:258] 
+Did not detect default resource location for test class [com.nws.api.NwsMiddlewareApplicationTests]: class path resource [com/nws/api/NwsMiddlewareApplicationTests-context.xml] does not exist
+2024-11-18 11:30:26,142 DEBUG [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:258] 
+Did not detect default resource location for test class [com.nws.api.NwsMiddlewareApplicationTests]: class path resource [com/nws/api/NwsMiddlewareApplicationTestsContext.groovy] does not exist
+2024-11-18 11:30:26,143 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:264] 
+Could not detect default resource locations for test class [com.nws.api.NwsMiddlewareApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-11-18 11:30:26,145 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:83] 
+Could not detect default configuration classes for test class [com.nws.api.NwsMiddlewareApplicationTests]: NwsMiddlewareApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-18 11:30:26,346 DEBUG [main] o.s.t.c.s.ActiveProfilesUtils [ActiveProfilesUtils.java:80] 
+Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.nws.api.NwsMiddlewareApplicationTests]
+2024-11-18 11:30:26,502 DEBUG [main] o.s.c.a.ClassPathScanningCandidateComponentProvider [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\NwsMiddlewareApplication.class]
+2024-11-18 11:30:26,505 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:239] 
+Found @SpringBootConfiguration com.nws.api.NwsMiddlewareApplication for test class com.nws.api.NwsMiddlewareApplicationTests
+2024-11-18 11:30:26,755 DEBUG [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:124] 
+@TestExecutionListeners is not present for class [com.nws.api.NwsMiddlewareApplicationTests]: using defaults.
+2024-11-18 11:30:26,758 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:245] 
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-11-18 11:30:26,791 DEBUG [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:189] 
+Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2024-11-18 11:30:26,795 DEBUG [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:189] 
+Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2024-11-18 11:30:26,798 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:174] 
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9635fa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@53ab0286, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@63c5efee, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2d10e0b1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c98290c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@172ca72b, org.springframework.test.context.event.EventPublishingTestExecutionListener@5bda80bf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71e5f61d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2ce86164, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5e8f9e2d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@51df223b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@fd46303, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@60d8c0dc]
+2024-11-18 11:30:26,805 DEBUG [main] o.s.t.c.s.AbstractDirtiesContextTestExecutionListener [AbstractDirtiesContextTestExecutionListener.java:143] 
+Before test class: context [DefaultTestContext@1e044120 testClass = NwsMiddlewareApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2cf23c81 testClass = NwsMiddlewareApplicationTests, locations = '{}', classes = '{class com.nws.api.NwsMiddlewareApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1b835480, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@16414e40, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3a12c404, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@512535ff, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2a448449, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@353d0772], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+2024-11-18 11:30:27,517 INFO [main] c.n.a.NwsMiddlewareApplicationTests [StartupInfoLogger.java:55] 
+Starting NwsMiddlewareApplicationTests using Java 11.0.10 on DIAM-ITAMIDWARE with PID 13648 (started by PAMIDMGMT in D:\allConfigData\NwsMiddleware)
+2024-11-18 11:30:27,518 DEBUG [main] c.n.a.NwsMiddlewareApplicationTests [StartupInfoLogger.java:56] 
+Running with Spring Boot v2.7.9, Spring v5.3.25
+2024-11-18 11:30:27,519 INFO [main] c.n.a.NwsMiddlewareApplicationTests [SpringApplication.java:631] 
+No active profile set, falling back to 1 default profile: "default"
+2024-11-18 11:30:27,521 DEBUG [main] o.s.b.SpringApplication [SpringApplication.java:664] 
+Loading source class com.nws.api.NwsMiddlewareApplication
+2024-11-18 11:30:27,697 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext [AbstractApplicationContext.java:629] 
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13e9f2e2
+2024-11-18 11:30:27,779 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-11-18 11:30:27,814 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2024-11-18 11:30:27,910 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\config\WebConfig.class]
+2024-11-18 11:30:28,026 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\controller\Controllers.class]
+2024-11-18 11:30:28,033 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\controller\DiamControllerVer1.class]
+2024-11-18 11:30:28,044 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\controller\DiamControllerVer2.class]
+2024-11-18 11:30:28,046 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\esb\ConnectionHelper.class]
+2024-11-18 11:30:28,053 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\exception\GlobalExceptionHandler.class]
+2024-11-18 11:30:28,056 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\interceptor\BaseInterceptor.class]
+2024-11-18 11:30:28,094 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\service\DiamServiceVer1.class]
